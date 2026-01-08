@@ -57,6 +57,9 @@ app.delete('/delete/:id', (req, res) => {
         res.json({ message: 'Application deleted successfully' });
     });
 });
+app.get('/', (req, res) => {
+    res.send('Internship Tracker API is running');
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
